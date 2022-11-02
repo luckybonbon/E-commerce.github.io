@@ -59,11 +59,13 @@ if (!isset($_SESSION['login'])) {
                     <!-- 訂單查詢樣板 bootstrap 4.6 -> collapse -> Accordion example 專案6 page.5-8 -->
                     <h3>電商藥妝：訂單查詢</h3>
                     <!-- 建立while結束處理 page.18 -->
-                    <?php  if(mysqli_fetch_array($order_rs) != 0) {  ?>
+                    <?php  if(mysqli_fetch_array($order_rs) != 0) {
+                            $order_rs = mysqli_query($link,$query);  //重置mysqli_fetch_array($order_rs)，解決指令造成第一個訂單找不到的問題
+                    ?>
                         <div class="accordion" id="accordion_order">
                             <!-- 建立while結束處理 page.18 -->
-                            <!-- 只有一筆資料時，抓不到資料，兩筆才可以..... -->
-                            <?php  while($data01 = mysqli_fetch_array($order_rs))  {echo "11111八嘎";?>
+                            <!-- 只有一筆資料時，抓不到資料，兩筆才可以..... !!!!!已解決!!!!!-->
+                            <?php  while($data01 = mysqli_fetch_array($order_rs))  {  ?>
                                 <div class="card">
                                     <!-- 修改 headingOne -> heading1 ; collapseOne -> collapse1  page.19 -->
                                     <div class="card-header" id="heading1<?php echo $i; ?>"><a data-toggle="collapse" href="#collapse1<?php echo $i; ?>" aria-expanded="true" aria-controls="collapse1<?php echo $i; ?>">
@@ -162,7 +164,7 @@ if (!isset($_SESSION['login'])) {
                             <?php  $i++;
                             }  ?>
                         </div>
-                        <div class="row mt-2">1234</div>
+                        <div class="row mt-2"></div>
                     <!-- 建立while結束處理 page.18 -->
                     <?php  } else {  ?>
                         <div class="alert alert-info" role="alert">
