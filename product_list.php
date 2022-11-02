@@ -55,57 +55,7 @@ $i = 1   //控制每列row產生
             </div><?php } ?>
     <?php $i++;
     } ?>
-    <!-- <div class="row text-center">
-                        <div class="col-md-3">
-                            <div class="card">
-                                <img src="product_img/pic0101.jpg" class="card-img-top" alt="台大葉黃素膠囊">
-                                <div class="card-body">
-                                    <h5 class="card-title">台大葉黃素膠囊</h5>
-                                    <p class="card-text">游離型軟膠囊，採用金盞花植物萃取含20﹪葉黃素，調節生理機能，營養補給，健康維持</p>
-                                    <p>NT3600</p>
-                                    <a href="#" class="btn btn-primary">更多資訊</a>
-                                    <a href="#" class="btn btn-success">放購物車</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="card">
-                                <img src="product_img/pic0102.jpg" class="card-img-top" alt="黃金燕窩生物纖維面膜">
-                                <div class="card-body">
-                                    <h5 class="card-title">黃金燕窩生物纖維面膜</h5>
-                                    <p class="card-text">手術後保養，約會前急救聖品，媲美專櫃等級！網友推薦最新使用，肌膚很水嫩，感覺很透亮。</p>
-                                    <p>NT1200</p>
-                                    <a href="#" class="btn btn-primary">更多資訊</a>
-                                    <a href="#" class="btn btn-success">放購物車</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="card">
-                                <img src="product_img/pic0103.jpg" class="card-img-top" alt="MIZON 蝸牛全效活膚霜">
-                                <div class="card-body">
-                                    <h5 class="card-title">MIZON 蝸牛全效活膚霜</h5>
-                                    <p class="card-text">無論混合肌、油性肌、痘痘肌、乾性肌、過敏肌等《任何膚質適用》，是修護型保養品！！</p>
-                                    <p>NT690</p>
-                                    <a href="#" class="btn btn-primary">更多資訊</a>
-                                    <a href="#" class="btn btn-success">放購物車</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="card">
-                                <img src="product_img/pic0104.jpg" class="card-img-top" alt="星期四農莊迷迭香精油">
-                                <div class="card-body">
-                                    <h5 class="card-title">星期四農莊迷迭香精油</h5>
-                                    <p class="card-text">迷迭香精油+薰衣草精油(大自然植物舒眠系列)！！</p>
-                                    <p>NT1269</p>
-                                    <a href="#" class="btn btn-primary">更多資訊</a>
-                                    <a href="#" class="btn btn-success">放購物車</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-
+    
     <div class="row mt-3">
         <div class="col-md-12">
             <?php    //建立分頁程式page.90
